@@ -6,7 +6,6 @@ class Solution:
         """
         ans = []
 
-
         def dfs(stsr, left, right, ans):
             if len(stsr) == 2 * n:
                 ans.append(stsr)

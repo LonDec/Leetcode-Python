@@ -4,7 +4,8 @@
 class Solution:
     def dfs(self, ToList, currList, curr, lens, strs, nums):
         if curr == lens:
-            ToList.append(currList)
+            if len(currList) != 0:
+                ToList.append(currList)
             return
         for elem in nums[strs[curr]]:
             self.dfs(ToList, currList + elem, curr + 1, lens, strs, nums)
@@ -32,5 +33,5 @@ class Solution:
 
 if __name__ == '__main__':
     so = Solution()
-    List = so.letterCombinations("23")
+    List = so.letterCombinations("")
     print (List)

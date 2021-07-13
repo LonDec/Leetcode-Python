@@ -1,2 +1,3 @@
-# Leetcode-Python
-leetcode with language Python from 2018
+# My-Leetcode
+
+my leetcode from 2018
